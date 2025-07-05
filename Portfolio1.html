@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Rakesh Boyapati — AI Engineer</title>
+  <style>
+    :root {
+      --primary:   #0a66c2;
+      --accent:    #144b8b;
+      --bg:        #f5f7fa;
+      --fg:        #333;
+      --fg-light:  #555;
+      --white:     #fff;
+      --radius:    5px;
+      --gap:       1.2rem;
+      --transition:0.3s;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: var(--fg-light);
+      background: var(--bg);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    header {
+      background: var(--white);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+    .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: var(--accent);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+    nav ul li a {
+      padding: 0.3rem 0.5rem;
+      transition: color var(--transition);
+    }
+    nav ul li a:hover {
+      color: var(--accent);
+    }
+    section {
+      padding: 3rem 0;
+    }
+    h2 {
+      margin-bottom: 1rem;
+      color: var(--fg);
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 0.2rem;
+    }
+    /* HERO */
+    .hero {
+      background: url('https://via.placeholder.com/1200x400') center/cover no-repeat;
+      color: var(--white);
+      text-align: center;
+      position: relative;
+      padding: 5rem 1rem;
+    }
+    .hero::after {
+      content: '';
+      position: absolute; top:0; left:0; right:0; bottom:0;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero .container {
+      position: relative; z-index: 1;
+    }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .hero p { font-size: 1.1rem; }
+    /* ABOUT */
+    #about img {
+      float: left;
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 1rem;
+    }
+    @media (max-width: 600px) {
+      #about img {
+        float: none;
+        display: block;
+        margin: 0 auto 1rem;
+      }
+    }
+    /* SKILLS */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      list-style: none;
+    }
+    .skills-list li {
+      background: var(--primary);
+      color: var(--white);
+      padding: 0.4rem 0.8rem;
+      border-radius: var(--radius);
+      font-size: 0.9rem;
+    }
+    /* CARDS */
+    .card {
+      background: var(--white);
+      padding: 1rem;
+      border-radius: var(--radius);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+    }
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+    .card time {
+      font-size: 0.9rem;
+      color: var(--fg-light);
+    }
+    /* PROJECTS GRID */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+      gap: 1rem;
+    }
+    .project {
+      background: var(--white);
+      padding: 1rem;
+      border-radius: var(--radius);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform var(--transition);
+    }
+    .project:hover {
+      transform: translateY(-5px);
+    }
+    .project h4 {
+      margin: 0.5rem 0;
+      color: var(--accent);
+    }
+    /* CONTACT */
+    #contact .info {
+      list-style: none;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+    #contact .info li a {
+      display: inline-block;
+      margin-left: 0.3rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      color: var(--fg-light);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Rakesh Boyapati</div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Rakesh Boyapati</h1>
+      <p>AI Engineer</p>
+    </div>
+  </section>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <img src="C:\Users\boyap\Downloads\Rakesh Portfolio\images\1.jpg" alt="Rakesh Boyapati">
+    <p>
+      A recent B.Tech graduate in Artificial Intelligence and Machine Learning, showing strong interest in utilizing the latest technological advancements such as machine learning, deep learning, and generative AI to help solve real-world problems. Would like to join a dynamic team and help in creating innovative solutions in the AI/ML space. Always eager to learn and keep abreast of the most recent updates and developments in the industry.
+    </p>
+  </section>
+
+  <section id="skills" class="container">
+    <h2>Skills</h2>
+    <h3>Technical</h3>
+    <ul class="skills-list">
+      <li>Python</li><li>SQL</li><li>Machine Learning</li><li>Deep Learning</li>
+      <li>NLP</li><li>Computer Vision</li><li>Data Science</li><li>Data Analytics</li>
+      <li>Power BI</li>
+    </ul>
+    <h3 style="margin-top:1rem;">Soft</h3>
+    <ul class="skills-list">
+      <li>Communication</li><li>Teamwork</li><li>Problem-solving</li><li>Decision-making</li>
+    </ul>
+  </section>
+
+  <section id="experience" class="container">
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Machine Learning &amp; Data Science Intern @ FeyNN Labs</h3>
+      <time>Dec 2024 – Feb 2025 | Guwahati</time>
+      <ul style="margin-top:0.7rem;">
+        <li>Led a team to prototype AI services and products with futuristic solutions.</li>
+        <li>Performed market segmentation using ML and data analysis to extract insights.</li>
+        <li>Created financial &amp; business models to support strategic decision-making.</li>
+        <li>Collaborated closely with mentors and teammates to meet project goals.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="education" class="container">
+    <h2>Education</h2>
+    <div class="card">
+      <h3>B.Tech in AI &amp; ML</h3>
+      <time>Aug 2021 – May 2025 | Vel Tech Rangarajan Dr. Sagunthala R&amp;D Institute of Science and Technology, Chennai<br>GPA: 7.5 / 10</time>
+    </div>
+    <div class="card">
+      <h3>Intermediate Certificate (MPC)</h3>
+      <time>Mar 2021 | Sri Chaitanya Junior College, Vijayawada | 88%</time>
+    </div>
+    <div class="card">
+      <h3>10th Class – SSC</h3>
+      <time>Mar 2019 | BR Oxford EM High School, Kandukur | GPA: 9.0/10</time>
+    </div>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h4>Lung &amp; Colon Cancer Detection Using ML</h4>
+        <p>Developed CNN models for early cancer detection. Preprocessed medical images, trained &amp; tuned hyperparameters, and integrated into potential clinical systems.</p>
+      </div>
+      <div class="project">
+        <h4>Music Recommendation via Facial Expressions</h4>
+        <p>Built an emotion recognition system with OpenCV &amp; TensorFlow to recommend music. Designed a Streamlit UI for real-time interaction and high accuracy.</p>
+      </div>
+      <div class="project">
+        <h4>Personalized Tourism Planner (GPT-3.5)</h4>
+        <p>Created a live itinerary generator using GPT-3.5, integrating third-party APIs for weather &amp; budget constraints, wrapped in a Streamlit interface for seamless UX.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <ul class="info">
+      <li>📍 Kandukur, India</li>
+      <li>📞 <a href="tel:+917989369571">+91 79893 69571</a></li>
+      <li>✉️ <a href="mailto:boyapatirakesh9@gmail.com">boyapatirakesh9@gmail.com</a></li>
+      <li>🔗 <a href="https://linkedin.com/in/rakesh-boyapati-8a0024321" target="_blank">LinkedIn</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 Rakesh Boyapati
+  </footer>
+
+</body>
+</html>

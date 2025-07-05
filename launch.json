@@ -1,0 +1,118 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Chrome against localhost",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Chrome against localhost with sourcemaps",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}",
+            "sourceMapPathOverrides": {
+                "webpack:///./*": "${webRoot}/*"
+            }
+        },
+        {
+            "name": "Launch Chrome against file",
+            "type": "chrome",
+            "request": "launch",
+            "file": "${workspaceFolder}/Portfolio1.html"
+        },
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "chrome",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Chrome against localhost",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}"
+        },
+
+        {
+            "name": "Launch Chrome against localhost with sourcemaps",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}",
+            "sourceMapPathOverrides": {
+                "webpack:///./*": "${webRoot}/*"
+            }
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            {
+                "name": "Launch Chrome against localhost with sourcemaps",
+                "type": "chrome",
+                "request": "launch",
+                "url": "http://localhost:3000",
+                "webRoot": "${workspaceFolder}",
+                "sourceMapPathOverrides": {
+                    "webpack:///./*": "${webRoot}/*"
+                }
+            },
+            {
+                "name": "Launch Chrome against localhost",
+                "type": "chrome",
+                "request": "launch",
+                "url": "http://localhost:3000",
+                "webRoot": "${workspaceFolder}",
+                "sourceMapPathOverrides": {
+                    "webpack:///./*": "${webRoot}/*"
+                }
+            },
+            {
+                "name": "Launch Chrome against file",
+                "type": "chrome",
+                "request": "launch",
+                "file": "${workspaceFolder}/Portfolio1.html"
+            },
+            {
+                "name": "Attach to Chrome",
+                "port": 9222,
+                "request": "attach",
+                "type": "chrome",
+                "webRoot": "${workspaceFolder}"
+            },
+            {
+                "type": "chrome",
+                "request": "launch",
+                "name": "Open Portfolio1.html",
+                "file": "c:\\Users\\boyap\\Downloads\\Rakesh Portfolio\\Portfolio1.html"
+            }
+        ]
+    }
